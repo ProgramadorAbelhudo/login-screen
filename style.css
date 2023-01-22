@@ -1,0 +1,106 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #8e2de2, #ffffff);
+    overflow: hidden;
+}
+
+/* BOTÃO */
+
+button {
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #8e2de2;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+   }
+   
+   .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* 100% da altura da tela */
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .login-hr {
+    border: 1px solid #ccc;
+    width: 80%;
+    margin: 20px auto;
+}
+
+  form {
+    margin-top: 50px;
+  }
+  
+  label {
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+  input[type="email"], input[type="password"] {
+    border-radius: 20px;
+    border: none;
+  }
+
+  /* LOGO */
+
+  .logo-container {
+    position: fixed; /* posição fixa */
+    top: 0px; /* distância do topo */
+    left: 15px; /* distância da esquerda */
+    z-index: 1; /* ficar acima de tudo */
+}
+
+.logo-container img {
+  max-width: 150px; /* largura máxima */
+    max-height: 150px; /* altura máxima */
+    object-fit: contain; /* manter proporção */
+    image-rendering: crisp-edges; /* melhorar qualidade */
+}
+
+  /* BOTÃO */
+   
+   button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #8d2de2;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+   }
+   
+   button:hover {
+    color: #e8e8e8;
+   }
+   
+   button:hover::before {
+    width: 100%;
+   }
